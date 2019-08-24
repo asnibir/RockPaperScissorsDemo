@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Rock Paper Scissors</string>
+    <string name="player_one_button">One Player Mode</string>
+    <string name="player_two_button">Two Player Mode</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".Player_One">
+
+    <TextView
+        android:id="@+id/player_ones_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:text="Player One's Turn"
+        android:paddingBottom="80dp"
+        android:paddingTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/player_one_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rock"
+        android:layout_below="@+id/player_ones_turn"
+        android:paddingBottom="40dp"/>
+
+    <!--<TextView
+        android:id="@+id/player_one_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player_one_image"
+        android:text="Score: PlayerOne 0  PlayerTwo 0 "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="50dp"
+        />-->
+
+    <Button
+        android:id="@+id/player_one_rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rock"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/player_one_image"
+        android:paddingRight="20dp"
+        />
+    <Button
+        android:id="@+id/player_one_paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paper"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/player_one_image"
+        android:layout_toRightOf="@+id/player_one_rock"
+        android:paddingRight="20dp"
+        />
+    <Button
+        android:id="@+id/player_one_scissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scissors"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/player_one_image"
+        android:layout_toRightOf="@+id/player_one_paper"
+
+        />
+
+</RelativeLayout>

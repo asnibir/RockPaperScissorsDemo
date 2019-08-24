@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    tools:context=".OnePlayerMode">
+
+    <TextView
+        android:id="@+id/you"
+        android:text="You"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="160dp"/>
+
+    <TextView
+        android:id="@+id/your_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your score: 0"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/you"/>
+
+
+    <ImageView
+        android:id="@+id/your_image"
+        android:layout_below="@+id/you"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/rock"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:id="@+id/computer"
+        android:layout_below="@+id/your_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="100dp"
+        />
+
+    <TextView
+        android:id="@+id/computer_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/your_image"
+        android:layout_toRightOf="@+id/computer"
+        android:text="Computer score: 0"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/computer_image"
+        android:layout_below="@+id/computer"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/rock"
+        android:layout_marginBottom="40dp"
+        />
+
+    <Button
+        android:id="@+id/rock_button"
+        android:layout_below="@+id/computer_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rock"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/paper_button"
+        android:layout_toRightOf="@+id/rock_button"
+        android:layout_below="@+id/computer_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paper"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/scissors_button"
+        android:layout_toRightOf="@+id/paper_button"
+        android:layout_below="@+id/computer_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scissors"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"/>
+
+
+</RelativeLayout>
