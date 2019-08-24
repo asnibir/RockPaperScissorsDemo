@@ -1,3 +1,6 @@
+Name: Abu Shaikh Nibir
+Roll: SH-03
+
 # RockPaperScissorsDemo
 This is a Rock Paper Scissors game.
 In this game you can play vs computer or vs a person.
